@@ -15,37 +15,57 @@ class Myapp extends StatelessWidget {
       appBar: AppBar(backgroundColor: Colors.brown,
       ),
       body: SafeArea(
-        child: Row(crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [Container(color: Colors.greenAccent,
-          height: 100.0,
-          width: 100.0,
-          child: Text("container1"),
-          ),
-          SizedBox(width: 30.0,),
-          Container(color: Colors.lightGreen,
-            height: 100.0,
-            width: 100.0,
-            child: Text("container2"),
-          ),
-        Container(color: Colors.orangeAccent,
-          height: 100.0,
-          width: 100.0,
-          child: Text("container3"),),
+        child: Column( children: [CircleAvatar(radius: 70.0,
+          backgroundImage: AssetImage('images/diamond.png'),
+        ),
+       Text('Joyline Selim',
+         style: TextStyle(color: Colors.blueGrey,
+       fontFamily: 'Dancing Script',
+           fontSize: 40.0,
+       ),
+       ),
+        Text('FLUTTER DEV',
+       style: TextStyle(fontFamily: 'Pacifico',
+         fontSize: 40.0,
+          color: Colors.cyan,
+         fontWeight: FontWeight.bold,
+         letterSpacing: 3.0,
+       ),
+        ),
+       Card(color: Colors.white,
+       margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0,),
+         child: ListTile(leading: Icon(Icons.phone,
+           color: Colors.black,
+           size: 10.0,
+         ),
+           title: Text('+254 724 063 263',
+             style: TextStyle(color: Colors.black,
+               fontFamily: 'Pacifico',
+               fontWeight: FontWeight.bold,
+             ),
+           ),
+         ),
+       ),
+       Card(color: Colors.white,
+       margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0,),
+         child: ListTile(leading: Icon(Icons.email,
+           size: 10.0,
+           color: Colors.black,),
+         title: Text('joylineselim10@gmail.com',
+           style: TextStyle(color: Colors.black,
+             fontFamily: 'Pacifico',
+             fontWeight: FontWeight.bold,),
+         ),
+         ),
+       ),
         ],//children
         ),
+
       ),
     ),
     );
   }
 }
-
-
-
-
-
-
-
-
 
 
 
